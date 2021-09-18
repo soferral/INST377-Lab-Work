@@ -34,6 +34,10 @@
     justify-content: space-between;
   }
 
+  .signup {
+    margin-left: auto;
+  }
+
   .links {
     border: 1px solid #fff;  /* For debugging */
     display: flex;
@@ -75,6 +79,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 .photo-grid-item {
@@ -82,6 +87,15 @@
   width: 300px;
   height: 300px;
 }
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -92,4 +106,11 @@
   background-color: #D6E9FE;
   height: 200px;
   flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
 }
