@@ -17,12 +17,36 @@
         </div>
         <div class="column is-half">
             <div class="container">
-                <form action='' method='get' class='speaker-form'>
-                    <div class="form-row">
-                        <label for="first-name">First Name</label>
-                        <input id='first-name' name="first-name" type="text"/>
+                <form action='/api' method='get' class='speaker-form'>
+                    <div class="field">
+                        <label class="label">First Name</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="name">
+                        </div>
                     </div>
+
+                    <div class="field">
+                      <label class="label">Food Preference</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="food">
+                      </div>
+                    </div>
+
+                    <div class="control">
+                      Veggie or Vegan? 
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        Yes
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        No
+                      </label>
+                    </div>
+                    <button class="button">Submit</button>
                 </form>
+
+                
             </div>
         </div>
         <div class="column is-half">
