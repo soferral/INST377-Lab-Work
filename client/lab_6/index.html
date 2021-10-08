@@ -8,19 +8,14 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <script>
-        const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
-        const rests = [];
-        fetch(endpoint)
-        .then(blob => blob.json())
-        .then(data => rests.push(...data))
-        console.log(rests)
-        
-    </script>
+    
     <div class="container">
         <form action='/api' method='get' class='speaker-form'>
                 <label for="lookup">Restaurant Lookup</label><br>
                 <input type="text" id="lookup" name="lookup"><br>
         </form>
     </div>
+    <script src="script.js"></script>
   </body>
+  
+</html>
