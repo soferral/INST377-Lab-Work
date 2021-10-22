@@ -1,51 +1,67 @@
-YOUR NAME Lab 2: CSS Selectors
-
-Selectors
-Main Page
 
 <!DOCTYPE HTML>
 
 <html>
 
     <head>
-        <title>Steven O'Ferrall Lab 1: Intro to HTML</title>
+        <title>Steven O'Ferrall Lab 2</title>
         <link rel='stylesheet' href='styles.css'/>
     </head>
 
     <body>
-        <h1>Steven O'Ferrall Lab 1: Intro to HTML</h1>
-        <div class="nav"><a href="http://localhost:3000/lab_2/"> link </a></div>
-        <div class="slides">
-            <img src="images/onigiri_1.png"/>
-            <img src="images/onigiri_2.png"/>
-            <img src="images/onigiri_3.png"/>
-            <img src="images/onigiri_4.png">
-        </div>
-        <h2>SoulsBorne lists</h2>
-        List of Dark Souls games
-        <ul>
-            <li>Dark Souls</li>
-            <li>Dark Souls 2</li>
-            <li>Dark Souls 3</li>
-        </ul>
-        My top 5 favorite albums
-        <ol>
-            <li>Graduation</li>
-            <li>My Beautiful Dark Twisted Fantasy</li>
-            <li>Life of Pablo</li>
-            <li>Donda</li>
-            <li>Late Registration</li>
-        </ol>
-        <h2>Let's Try Some Inline Elements</h2>
-        <p>Sometimes you want to <em>draw attention to something</em> in a line of text.</p>
-        <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
-        <p>Sometimes you want to do <em><strong>both</strong></em></p>
-        <h2>Empty Elements</h2>
-        <p>Soft line breaks can't wrap anything. <br>Neither can image tags, or hard lines.</p>
-        <p>Add a hard line under here</p>
-        <hr>
-        <a href="https://github.com/soferral/INST377-Lab-Work" target="_blank">Github repo</a>
+        <div class='wrapper'>
+            <p class="title">
+                Steven O'Ferrall Lab 2: CSS Selectors
+            </p>
+            <nav>
+                <a href="http://localhost:3000/lab_2/selectors.html">Selectors</a>
+                <a href="http://localhost:3000/lab_2">Main Page</a>
+            </nav>
+            
+            
+            <div class='section_1'>
 
+                <ul>
+                    <p>List of Dark Souls games</p>
+                    <li>Dark Souls</li>
+                    <li>Dark Souls 2</li>
+                    <li>Dark Souls 3</li>
+                </ul>
+                
+                <ol>
+                    <p> My top 5 favorite albums </p>
+                    <li>Graduation</li>
+                    <li>My Beautiful Dark Twisted Fantasy</li>
+                    <li>Life of Pablo</li>
+                    <li>Donda</li>
+                    <li>Late Registration</li>
+                </ol>
+            </div>
+            <div class='section_2'>
+                <h2>Let's Try Some Inline Elements</h2>
+                <p>Sometimes you want to <em>draw attention to something</em> in a line of text.</p>
+                <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
+                <p>Sometimes you want to do <em><strong>both</strong></em></p>
+            </div>
+            <div class='section_3'>
+                <h2>Empty Elements</h2>
+                <p>Soft line breaks can't wrap anything. <br>Neither can image tags, or hard lines.</p>
+                <p>Add a hard line under here</p>
+                <hr>
+            </div>
+            <div class='section_4'>
+                <h2>Images</h2>
+                <div class="carousel">
+                    <p class="slides">
+                        <img src="images/onigiri_1.png", alt="onigiri_1"/>
+                        <img src="images/onigiri_2.png", alt="onigiri_2"/>
+                        <img src="images/onigiri_3.png", alt="onigiri_3"/>
+                        <img src="images/onigiri_4.png", alt="onigiri_4">
+                    </p>
+                </div>
+            </div>
+            <a href="https://github.com/soferral/INST377-Lab-Work" target="_blank">Github repo</a>
+        </div>
     </body>
 
 </html>
